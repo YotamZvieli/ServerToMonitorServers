@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "898093de-e064-497e-bf5b-6ce30acb4d55",
+		"name": "Sever Monitor System",
+		"description": "# Introduction\n\nServer to hendle the monitoring requests.\n\nAll the api requests are specifyed in the API callection including all the necessary parameters.\n\nAll you need to do is to Edit the parameters run the server and send the api request.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26562458"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4567/Create",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4567/Create?name=google&URL=https://www.google.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"Create"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "google"
+						},
+						{
+							"key": "URL",
+							"value": "https://www.google.com"
+						}
+					]
+				},
+				"description": "Create New Server object in the system"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4567/Create?name=google&URL=https://www.google.com/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"Create"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "google"
+								},
+								{
+									"key": "URL",
+									"value": "https://www.google.com/"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4567/Delete",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4567/Delete?name=google",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "google"
+						}
+					]
+				},
+				"description": "Delete server by name"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4567/Delete?name=google",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "google"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4567/Edit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4567/Edit?nameToEdit=facebook&newName=google&newURL=https://www.google.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"Edit"
+					],
+					"query": [
+						{
+							"key": "nameToEdit",
+							"value": "facebook"
+						},
+						{
+							"key": "newName",
+							"value": "google"
+						},
+						{
+							"key": "newURL",
+							"value": "https://www.google.com"
+						}
+					]
+				},
+				"description": "Edit Server"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4567/Edit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"Edit"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4567/GetDataOfWebServer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4567/GetDataOfWebServer?name=google",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"GetDataOfWebServer"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "google"
+						}
+					]
+				},
+				"description": "Get Server Details and request history"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4567/GetDataOfWebServer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"GetDataOfWebServer"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4567/GetServersList",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4567/GetServersList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"GetServersList"
+					]
+				},
+				"description": "Get list of all existing web servers in the system"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4567/GetServersList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"GetServersList"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4567/GetHistoryOfWebServer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4567/GetHistoryOfWebServer?name=google",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"GetHistoryOfWebServer"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "google"
+						}
+					]
+				},
+				"description": "Get specific server history"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4567/GetHistoryOfWebServer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"GetHistoryOfWebServer"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4567/Delete?name=google",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4567/Delete?name=google",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "google"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
