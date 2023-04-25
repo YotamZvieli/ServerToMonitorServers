@@ -5,7 +5,7 @@ public class ServerManager {
     protected static Map<String, WebServer> ServerSet = new HashMap<>();
     protected static final String SqlUrl = "jdbc:mysql://localhost:3306/cloudmonitoringdb"; //server address
     protected static final String user = "root"; //User name to mysql server
-    protected static final String password = "shchanya6625975"; //PassWord to mysql user
+    protected static final String password = "EnterPassword"; //PassWord to mysql user
 
     public static void main(String[] args) throws Exception { //Interface to create delete and edit web servers from the system.
         try {
